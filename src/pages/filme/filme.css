@@ -1,3 +1,12 @@
+.loading {
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+}
+
 .filme-info {
     margin: 0 auto;
     margin-top: 18px;
@@ -5,6 +14,8 @@
     flex-direction: column;
     max-width: 800px;
     padding: 0 8px;
+    background: #fff;
+    border-radius: 4px;
 
 }
 
@@ -25,8 +36,13 @@
 .filme-info span{
     margin: 8px 0;;
 }
+.area-buttons{
+    margin-bottom: 14px;
+}
 
 .area-buttons button{
+    background: #DEE2E6;
+    font-size: 14px;
     margin-right: 12px;
     margin-top: 14px;
     margin-left: 0;
@@ -39,17 +55,27 @@
 }
 
 .area-buttons button:hover{
-    background: brown;
+    background: #333;
     color: #fff;
 }
 
 .area-buttons a{
+    background: #DEE2E6;
     color: #000;
     text-decoration: none;
+    font-size: 14px;
+    margin-right: 12px;
+    margin-top: 14px;
+    margin-left: 0;
+    padding: 12px;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
     transition: all 0.3s;
 }
 
 .area-buttons a:hover{
-    background: brown;
+    background: #333;
     color: #fff;
 }

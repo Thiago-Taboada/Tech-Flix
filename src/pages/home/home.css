@@ -1,4 +1,6 @@
 .loading {
+  color: #fff;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,19 +8,24 @@
 }
 
 .lista-filmes {
+  column-count: 3;
   max-width: 800px;
   margin: 14px auto;
 }
 
 .lista-filmes article {
   width: 100%;
-  background-color: #fff;
+  min-height: 467px;
+  background: #fff;
   padding: 15px;
   border-radius: 4px;
+  margin-bottom: 16px;
+  margin: 14;
 }
 
 .lista-filmes strong {
-  margin-bottom: 14px;
+  height: 40px;
+  margin-top: 10px;
   text-align: center;
   font-size: 22px;
   display: block;
