@@ -34,6 +34,23 @@ function Filme(){
 
     }, [id, navigate])
 
+    function salvaFilme() {
+        const fimesLista = localStorage.getItem("@techflix");
+
+        let filmesSalvos = JSON.parse(fimesLista) || [];
+
+        const hasFilme = filmesSalvos.some( (filmeSalvo) => filmeSalvo.id === filme.id)
+
+        if(hasFilme){
+            alert(`O filme "${filme.title}" ja esta na sua lista!`);
+            return
+        }
+
+        filmesSalvos.push(filme);
+        localStorage.setItem("@techflix", JSON.stringify(filmesSalvos));
+        alert("Filme salvo!")
+    }
+
     if (loading){
         return(
             <div className="loading">
@@ -50,8 +67,8 @@ function Filme(){
             <span>{filme.overview}</span>
             <strong>Avaliação: {filme.vote_average} / 10</strong>
             <div className='area-buttons'>
-                <button>Salvar</button>
-                <a href={`https://www.youtube.com/results?search_query=${filme.title} Trailer`} target='_blank' rel='external'>Trailer</a>
+                <button onClick={salvaFilme}>Salvar</button>
+                <a href={`https://www.youtube.com/results?search_query=${filme.title} Trailer`} target='blank' rel='external'>Trailer</a>
             </div>
         </div>
     )
