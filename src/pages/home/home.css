@@ -15,7 +15,7 @@
 
 .lista-filmes article {
   width: 100%;
-  min-height: 467px;
+  max-height: 430px;
   background: #fff;
   padding: 15px;
   border-radius: 4px;
@@ -37,19 +37,7 @@
   max-height: 340px;
   object-fit: cover;
   display: block;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-radius: 8px;
 }
 
-.lista-filmes a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 0;
-  font-size: 24px;
-  background-color: #116feb;
-  text-decoration: none;
-  color: #fff;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
+

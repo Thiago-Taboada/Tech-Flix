@@ -22,7 +22,7 @@ function Filme(){
                 setLoading(false);
             })
             .catch(()=>{
-                navigate('/', { replace:true });
+                navigate("/", { replace:true });
                 return;
             })
         }
@@ -32,7 +32,7 @@ function Filme(){
             console.log("desmontado");
         }
 
-    }, [])
+    }, [id, navigate])
 
     if (loading){
         return(
@@ -51,9 +51,7 @@ function Filme(){
             <strong>Avaliação: {filme.vote_average} / 10</strong>
             <div className='area-buttons'>
                 <button>Salvar</button>
-                
-                <a href='#'>Trailer</a>
-                
+                <a href={`https://www.youtube.com/results?search_query=${filme.title} Trailer`} target='_blank' rel='external'>Trailer</a>
             </div>
         </div>
     )
