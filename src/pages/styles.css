@@ -1,0 +1,165 @@
+.loading {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.lista-favoritos{
+  margin-top: 14px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lista-favoritos div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista-favoritos div a{
+  text-decoration: none;
+  color: #fff;
+  margin-right: 14px;
+}
+
+.lista-favoritos h1{
+  margin-bottom: 14px;
+}
+
+.lista-favoritos span{
+  font-size: 18px;
+}
+
+.lista-favoritos ul{
+  width: 720px;
+}
+
+.lista-favoritos ul li{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.lista-filmes {
+  column-count: 3;
+  max-width: 800px;
+  margin: 14px auto;
+}
+
+.lista-filmes article {
+  width: 100%;
+  max-height: 430px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.lista-filmes strong {
+  height: 40px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 22px;
+  display: block;
+}
+
+.lista-filmes img {
+  width: 900px;
+  max-width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.container h1 {
+  margin-top: 14px;
+  color: #fff;
+}
+
+.not-found {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.not-found h1 {
+  font-size: 120px;
+}
+
+.not-found a {
+  text-decoration: none;
+  background: #116feb;
+  color: #fff;
+  padding: 10px;
+  margin-top: 14px;
+  border-radius: 4px;
+}
+
+.filme-info {
+  margin: 0 auto;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  padding: 0 8px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.filme-info h1 {
+  margin: 14px 0;
+}
+
+.filme-info img {
+  border-radius: 8px;
+  width: 800px;
+  max-width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+}
+
+.filme-info h3 {
+  margin-top: 14px;
+}
+
+.filme-info span {
+  margin: 8px 0;
+}
+
+.area-buttons {
+  margin-bottom: 14px;
+}
+
+.area-buttons button,
+.area-buttons a {
+  background: #dee2e6;
+  font-size: 14px;
+  margin-right: 12px;
+  margin-top: 14px;
+  margin-left: 0;
+  padding: 12px;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.area-buttons button:hover,
+.area-buttons a:hover {
+  background: #333;
+  color: #fff;
+}
