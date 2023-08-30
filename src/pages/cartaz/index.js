@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import api from '../../services/api';
 import { Link } from 'react-router-dom';
-import './home.css';
+import './cartaz.css';
 
-function Home(){
+function Cartaz(){
     const [filmes, setFilmes] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(()=>{
         async function loadFilmes(){
-            const response = await api.get("movie/top_rated", {
+            const response = await api.get("movie/now_playing", {
                 params:{
                     api_key: "a5e392e03ce076f6916518aa1a3302c3",
                     language: "pt-BR",
@@ -34,7 +34,7 @@ function Home(){
 
     return(
         <div className='container'>
-            <h1>Filmes Aclamados Pela Crítica</h1>
+            <h1>Filmes em cartaz</h1>
             <div className='lista-filmes'>
                 {filmes.map((filme)=>{
                     return(
@@ -51,4 +51,4 @@ function Home(){
     )
 
 }
-export default Home;
+export default Cartaz;

@@ -1,6 +1,6 @@
 header{
     width: 100%;
-    height: 60px;
+    height: 70px;
     background: #002029;
     display: flex;
     justify-content: space-around;
@@ -13,6 +13,27 @@ header{
     text-decoration: none;
     font-size: 30px;
     cursor: pointer;
+}
+
+.logo:hover{
+    color: #D3D4D9;
+}
+
+.nav-links{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav{
+    color: #FFF9FB;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav:hover{
+    color: #D3D4D9;
 }
 
 
