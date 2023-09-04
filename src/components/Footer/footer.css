@@ -3,7 +3,7 @@ footer{
     height: 50px;
     background: #002029;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
     color: #FFF9FB;
 }
