@@ -1,3 +1,4 @@
+# Old project, pending updates.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Visit now the [Tech Flix deploy](https://techflix-taboada.netlify.app).
